@@ -6,10 +6,13 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+html {
+  height: 100%;
+  background: linear-gradient(180deg, #134d71, #78a7c6, #f7e4bf);
+}
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(180deg, #134d71, #78a7c6, #f7e4bf);
 }
 
 #choice-box {
