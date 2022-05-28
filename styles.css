@@ -15,6 +15,15 @@ h1, h2 {
   text-align: center;
 }
 
+input {
+
+}
+
+label {
+
+
+}
+
 #choice-box {
   height: 120px;
   width: 650px;
@@ -27,9 +36,9 @@ h1, h2 {
   background-color: #134d71;
   border-radius: 5px;
   width: 150px;
-  position: relative;
-  left: -90px;
-  bottom: -90px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 65px;
 }
 
 #image-box {
@@ -42,15 +51,7 @@ h1, h2 {
 }
 
 #radio1 {
-  position: relative;
-  left: -35px;
-  bottom: -40px;
-}
-
-#radio2 {
-  position: relative;
-  left: 170px;
-  bottom: -40px;
+  margin-right: 200px;
 }
 
 .white {
@@ -67,12 +68,9 @@ h1, h2 {
   margin-right: auto;
   width: 50%;
 }
-/*
-.text1 {
 
+.radio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-.text2 {
-
-}
-*/
