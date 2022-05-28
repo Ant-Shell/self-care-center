@@ -25,7 +25,8 @@ body {
 }
 
 #message-button {
-
+  background-color: #134d71;
+  border-radius: 5px;
 }
 
 #image-box {
