@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
   text-align: center;
 }
 
@@ -40,4 +39,8 @@ body {
 
 .white {
   color: #ffffff;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
 }
