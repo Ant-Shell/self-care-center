@@ -42,11 +42,14 @@ body {
 }
 
 #radio1 {
-
+  position: relative;
+  left: -35px;
+  bottom: -40px;
 }
 
 #radio2 {
-
+  position: relative;
+  left: 170px;
 }
 
 .white {
@@ -55,4 +58,12 @@ body {
 
 .font-quicksand {
   font-family: 'Quicksand', sans-serif;
+}
+
+.text1 {
+
+}
+
+.text2 {
+  
 }
