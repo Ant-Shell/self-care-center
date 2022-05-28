@@ -51,7 +51,6 @@ label {
 }
 
 #radio1 {
-  margin-right: 200px;
 }
 
 .white {
@@ -73,4 +72,11 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
 }
