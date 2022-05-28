@@ -26,7 +26,7 @@ label {
 
 #choice-box {
   height: 120px;
-  width: 650px;
+  width: 600px;
   background-color: #ffffff;
   border-radius: 15px;
   margin: auto;
@@ -38,7 +38,7 @@ label {
   width: 150px;
   margin: 0 auto;
   display: block;
-  margin-top: 65px;
+  margin-top: 50px;
 }
 
 #image-box {
@@ -51,6 +51,11 @@ label {
 }
 
 #radio1 {
+
+}
+
+#radio2 {
+
 }
 
 .white {
@@ -77,6 +82,15 @@ label {
 .radio {
   display: inline-flex;
   align-items: center;
-  cursor: pointer;
   margin-right: 10px;
+  padding-top: 20px;
+}
+
+.radio-container1 {
+  margin-left: 100px;
+}
+
+
+.radio-container2 {
+  margin-left: 200px;
 }
