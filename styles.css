@@ -11,7 +11,7 @@ html {
   background: linear-gradient(180deg, #134d71, #78a7c6, #f7e4bf);
 }
 
-body {
+h1, h2 {
   text-align: center;
 }
 
@@ -61,6 +61,10 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+label {
+  align-items: center;
+}
+/*
 .text1 {
 
 }
@@ -68,3 +72,4 @@ body {
 .text2 {
 
 }
+*/
