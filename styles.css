@@ -50,6 +50,7 @@ body {
 #radio2 {
   position: relative;
   left: 170px;
+  bottom: -40px;
 }
 
 .white {
@@ -65,5 +66,5 @@ body {
 }
 
 .text2 {
-  
+
 }
