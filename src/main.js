@@ -33,44 +33,22 @@ receiveMessageButton.addEventListener('click', showRandomMessage)
     var affirmation = affirmations[getRandomIndex(affirmations)];
     var mantra = mantras[getRandomIndex(mantras)];
     hideImage();
-    // setAffirmRadio();
     if (isAffirmRadio !== true) {
-      // displayMessage(mantra)
-      console.log(mantra)
+      displayMessage(mantra)
       } else {
-      // displayMessage(affirmation)
-      console.log(affirmation)
+      displayMessage(affirmation)
       }
     }
 
     function setAffirmRadio() {
       isAffirmRadio = true;
-      console.log(`isAffirmRadio Set to ${isAffirmRadio}`)
       return isAffirmRadio;
     }
 
     function setMantraRadio() {
       isMantraRadio = true;
-      console.log(`isMantraRadio Set to ${isMantraRadio}`)
       return isMantraRadio;
     }
-
-  // function showRandomAffirmation() {
-  //   var affirmation = affirmations[getRandomIndex(affirmations)];
-  //   // need to hide meditation image
-  //   hideImage();
-  //   // and present random affrimation in the image window
-  //   displayMessage(affirmation)
-  // }
-  //
-  // function showRandomMantra() {
-  //   var mantra = mantras[getRandomIndex(mantras)];
-  //   // need to hide meditation image
-  //   hideImage();
-  //   // and present random mantra in the image window
-  //   displayMessage(message)
-  //
-  // }
 
   function hideImage() {
     meditationImage.classList.add('hide');
@@ -82,11 +60,8 @@ receiveMessageButton.addEventListener('click', showRandomMessage)
 
   function displayMessage(message) {
     presentMessage.innerHTML = "";
-    for (var i =0; message.length; i++) {
       presentMessage.innerHTML +=
-      `<div>
-      <h2 class="message">${message[i]}</h2>
-      </div>
+      `
+      <h4 class="message font-quicksand">${message}</h4>
       `
     }
-  }
