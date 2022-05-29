@@ -11,9 +11,10 @@ html {
   background: linear-gradient(180deg, #134d71, #78a7c6, #f7e4bf);
 }
 
-h1, h2 {
+h1, h2, h4 {
   text-align: center;
 }
+
 
 input {
 
@@ -113,4 +114,9 @@ label {
 
 .hide {
   display: none;
+}
+
+.message {
+  padding-top: 80px;
+  font-weight: lighter;
 }

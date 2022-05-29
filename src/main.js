@@ -1,15 +1,26 @@
 // Button Related Selectors
-var mantraRadio = document.querySelector('#radio1');
+var affirmationRadio = document.getElementById('radio1');
 
-var affimrationRadio = document.querySelector('#radio2');
+var mantraRadio = document.getElementById('radio2');
 
-var receiveMessageButton = document.querySelector('#message-button');
+var receiveMessageButton = document.getElementById('message-button');
 
-var meditationImage = document.getElementById('meditation-image');
+var meditationImage = document.getElementById('meditation-img');
+
+// var imageBox = document.getElementById('image-box')
+
+var presentMessage = document.querySelector('.present-message')
+
+var isAffirmRadio = false;
+
+var ismantraRadio = false;
+
 
 
 // Event Listeners
-
+affirmationRadio.addEventListener('click', setAffirmRadio)
+mantraRadio.addEventListener('click', setMantraRadio)
+receiveMessageButton.addEventListener('click', showRandomMessage)
 
 
 // Functions
@@ -17,24 +28,40 @@ var meditationImage = document.getElementById('meditation-image');
   function getRandomIndex(array) {
       return Math.floor(Math.random() * array.length);
   };
-  function showRandomAffirmation() {
-    var affirmation = affirmations[getRandomIndex(affirmations)];
-    // need to hide meditation image
-    hideImage();
-    // and present random affrimation in the image window
-  }
 
-  function showRandomMantra() {
+  function showRandomMessage() {
+    var affirmation = affirmations[getRandomIndex(affirmations)];
     var mantra = mantras[getRandomIndex(mantras)];
-    // need to hide meditation image
     hideImage();
-    // and present random mantra in the image window
-  }
+    if (isAffirmRadio !== true) {
+      displayMessage(mantra)
+      } else {
+      displayMessage(affirmation)
+      }
+    }
+
+    function setAffirmRadio() {
+      isAffirmRadio = true;
+      return isAffirmRadio;
+    }
+
+    function setMantraRadio() {
+      isMantraRadio = true;
+      return isMantraRadio;
+    }
 
   function hideImage() {
-    meditationImage.classList.add(hide);
+    meditationImage.classList.add('hide');
   }
 
   function restoreImage() {
-    meditationImage.classList.remove(hide);
+    meditationImage.classList.remove('hide');
   }
+
+  function displayMessage(message) {
+    presentMessage.innerHTML = "";
+      presentMessage.innerHTML +=
+      `
+      <h4 class="message font-quicksand">${message}</h4>
+      `
+    }
