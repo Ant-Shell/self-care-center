@@ -84,6 +84,7 @@ label {
   align-items: center;
   margin-right: 10px;
   padding-top: 20px;
+  font-style: italic;
 }
 
 .radio-container1 {
@@ -93,4 +94,8 @@ label {
 
 .radio-container2 {
   margin-left: 200px;
+}
+
+.label {
+
 }
