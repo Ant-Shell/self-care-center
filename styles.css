@@ -110,3 +110,7 @@ label {
 .label {
 
 }
+
+.hide {
+  display: none;
+}
