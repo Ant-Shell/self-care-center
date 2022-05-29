@@ -42,12 +42,22 @@ label {
 }
 
 #image-box {
-
+  height: 200px;
+  width: 900px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 150px;
 }
 
 #meditation-img{
   width: 100px;
   length: 100px;
+}
+
+.meditation-img-small{
+  width: 30px;
+  length: 30px;
 }
 
 #radio1 {
@@ -71,6 +81,7 @@ label {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  padding-top: 5%
 }
 
 .radio-container {
