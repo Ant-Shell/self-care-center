@@ -7,10 +7,9 @@ var receiveMessageButton = document.getElementById('message-button');
 
 var meditationImage = document.getElementById('meditation-img');
 
-// var imageBox = document.getElementById('image-box')
-
 var presentMessage = document.querySelector('.present-message')
 
+// Button Booleans
 var isAffirmRadio = false;
 
 var ismantraRadio = false;
@@ -24,31 +23,31 @@ receiveMessageButton.addEventListener('click', showRandomMessage)
 
 
 // Functions
-
   function getRandomIndex(array) {
-      return Math.floor(Math.random() * array.length);
+    return Math.floor(Math.random() * array.length);
   };
 
   function showRandomMessage() {
     var affirmation = affirmations[getRandomIndex(affirmations)];
     var mantra = mantras[getRandomIndex(mantras)];
     hideImage();
+    // buttonCheck();
     if (isAffirmRadio !== true) {
       displayMessage(mantra)
-      } else {
+  } else {
       displayMessage(affirmation)
-      }
     }
+  }
 
-    function setAffirmRadio() {
-      isAffirmRadio = true;
+  function setAffirmRadio() {
+    isAffirmRadio = true;
       return isAffirmRadio;
-    }
+  }
 
-    function setMantraRadio() {
-      isMantraRadio = true;
+  function setMantraRadio() {
+    isMantraRadio = true;
       return isMantraRadio;
-    }
+  }
 
   function hideImage() {
     meditationImage.classList.add('hide');
@@ -60,8 +59,8 @@ receiveMessageButton.addEventListener('click', showRandomMessage)
 
   function displayMessage(message) {
     presentMessage.innerHTML = "";
-      presentMessage.innerHTML +=
+    presentMessage.innerHTML +=
       `
       <h4 class="message font-quicksand">${message}</h4>
       `
-    }
+  }
