@@ -15,16 +15,6 @@ h1, h2, h4 {
   text-align: center;
 }
 
-
-input {
-
-}
-
-label {
-
-
-}
-
 #choice-box {
   height: 120px;
   width: 600px;
@@ -33,13 +23,22 @@ label {
   margin: auto;
 }
 
-#message-button {
+#message-button1 {
   background-color: #134d71;
   border-radius: 5px;
   width: 150px;
-  margin: 0 auto;
+  margin: 0 150px;
   display: block;
   margin-top: 50px;
+}
+
+#message-button2 {
+  background-color: #134d71;
+  border-radius: 5px;
+  width: 150px;
+  margin: 0 350px;
+  display: block;
+  margin-top: -24px;
 }
 
 #image-box {
@@ -59,14 +58,6 @@ label {
 .meditation-img-small{
   width: 30px;
   length: 30px;
-}
-
-#radio1 {
-
-}
-
-#radio2 {
-
 }
 
 .white {
@@ -106,10 +97,6 @@ label {
 
 .radio-container2 {
   margin-left: 200px;
-}
-
-.label {
-
 }
 
 .hide {

@@ -3,16 +3,21 @@ var affirmationRadio = document.getElementById('radio1');
 
 var mantraRadio = document.getElementById('radio2');
 
-var receiveMessageButton = document.getElementById('message-button');
+var receiveMessageButton1 = document.getElementById('message-button1');
+
+var receiveMessageButton2 = document.getElementById('message-button2');
 
 var meditationImage = document.getElementById('meditation-img');
 
 var presentMessage = document.querySelector('.present-message')
 
+var headerFour = document.getElementsByTagName('h4')
+
 // Event Listeners
 affirmationRadio.addEventListener('click', setAffirmRadio)
 mantraRadio.addEventListener('click', setMantraRadio)
-receiveMessageButton.addEventListener('click', showRandomMessage)
+receiveMessageButton1.addEventListener('click', showRandomMessage)
+receiveMessageButton2.addEventListener('click', clearMantra)
 
 // Functions
   function getRandomIndex(array) {
@@ -22,7 +27,7 @@ receiveMessageButton.addEventListener('click', showRandomMessage)
   function showRandomMessage() {
     var affirmation = affirmations[getRandomIndex(affirmations)];
     var mantra = mantras[getRandomIndex(mantras)];
-    
+
     if (affirmationRadio.checked !== true
       && mantraRadio.checked !== true) {
         return;
@@ -33,6 +38,11 @@ receiveMessageButton.addEventListener('click', showRandomMessage)
       hideImage();
       displayMessage(affirmation)
     }
+  }
+
+  function clearMantra() {
+      presentMessage.innerHTML = "";
+      restoreImage();
   }
 
   function setAffirmRadio() {
