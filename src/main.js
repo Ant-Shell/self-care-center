@@ -9,9 +9,7 @@ var receiveMessageButton2 = document.getElementById('message-button2');
 
 var meditationImage = document.getElementById('meditation-img');
 
-var presentMessage = document.querySelector('.present-message')
-
-var headerFour = document.getElementsByTagName('h4')
+var presentMessage = document.querySelector('.present-message');
 
 // Event Listeners
 affirmationRadio.addEventListener('click', setAffirmRadio)
